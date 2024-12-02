@@ -66,6 +66,7 @@ jobs:
       run: yarn test
 
     - name: 👷 Build app
+      working-directory: ./app
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       run: |
