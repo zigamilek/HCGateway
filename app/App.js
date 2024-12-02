@@ -276,7 +276,7 @@ const sync = async () => {
         {
           timeRangeFilter: {
             operator: "between",
-            startTime: String(new Date(new Date().setDate(new Date().getDate() - 29)).toISOString()),
+            startTime: String(new Date(new Date().setDate(new Date().getDate() - 366)).toISOString()),
             endTime: String(new Date().toISOString())
           }
         }
