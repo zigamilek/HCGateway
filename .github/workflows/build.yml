@@ -66,6 +66,8 @@ jobs:
       run: yarn test
 
     - name: 👷 Build app
+      env:
+        EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       run: |
         eas build --local \
           --non-interactive \
